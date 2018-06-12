@@ -6,6 +6,7 @@ nodejsNode{
   def envProd = utils.environmentNamespace('run')
   def newVersion = ''
 
+  git version
   def scmVars = checkout scm
   echo "jenkins hash ${scmVars.GIT_COMMIT}"
   echo "jenkins hash ${scmVars}"
